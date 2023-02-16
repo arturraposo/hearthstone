@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  baseUrl:'http://192.168.0.2:3001'
+  baseUrl:'http://localhost:3001'
 };
 
 /*
