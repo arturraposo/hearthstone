@@ -19,11 +19,10 @@ export class ModalEditComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.initialForm(),
-    console.log(this.data.desc)
 
+    this.initialForm()
   }
-
+  /** Metódo para Inicializar Formulário com Dados da Carta a ser editada*/
   initialForm(){
     this.form = new FormGroup({
       nome:      new FormControl(this.data.nome,[Validators.required]),
@@ -36,14 +35,16 @@ export class ModalEditComponent implements OnInit {
     })
   }
 
+  /** Metódo para recarregar página*/
   load(){
     location.reload()
   }
-
+/** Metódo para Fechar Modal*/
   closeModal(){
     this.dialogRef.close()
   }
 
+/** Metódo para Submeter Dados do Formulário a serem Atualizados*/
   submitUpdate(){
     if(this.form.valid){
 

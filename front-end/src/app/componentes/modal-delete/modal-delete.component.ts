@@ -17,9 +17,8 @@ export class ModalDeleteComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log(this.data)
   }
-
+/** Metódo para Deletar Carta Selecionada*/
   deleteCard(){
     this.cartaService.deleteCard(this.data).subscribe(()=>{
       this._snackBar.open('Carta excluída com sucesso','X')

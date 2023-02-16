@@ -20,7 +20,7 @@ export class ModalComponent implements OnInit {
   ngOnInit(): void {
     this.initialForm()
   }
-
+   /** Metódo para Inicializar Formulário */
   initialForm(){
     this.form =  new FormGroup({
       nome:      new FormControl(null,[Validators.required]),
@@ -33,14 +33,17 @@ export class ModalComponent implements OnInit {
     })
   }
 
+  /** Metódo para Recarregar a Página*/
   load(){
     location.reload()
   }
 
+  /** Metódo para fechar Modal */
   closeModal(){
     this.dialogRef.close()
   }
 
+  /** Metódo para Submeter Dados do Fomulário */
   submitForm(){
 
     if(this.form.valid){

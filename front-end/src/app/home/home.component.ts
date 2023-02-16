@@ -40,7 +40,6 @@ export class HomeComponent implements OnInit  {
   }
 
   /** Metódo que Carrega os Dados*/
-
  async loadDados(){
     await this.cartaService.getAllCards().subscribe(data =>{
       this.dataSource = new MatTableDataSource(data);
@@ -51,7 +50,6 @@ export class HomeComponent implements OnInit  {
   }
 
   /** Metódo de Filtro */
-
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase()
@@ -59,7 +57,6 @@ export class HomeComponent implements OnInit  {
   }
 
   /** Metódo para abrir Modal de Inserir Novas Cartas*/
-
   openModalInsertCard(){
     const dialogRef = this.dialog.open(ModalComponent,{
       height: '600px',
@@ -67,6 +64,7 @@ export class HomeComponent implements OnInit  {
     })
   }
 
+ /** Metódo para abrir Modal de Editar Cartas*/
   openModalEditCard(id: number){
 
     this.cartaService.getCardById(id).subscribe(data => {
@@ -82,6 +80,7 @@ export class HomeComponent implements OnInit  {
 
   }
 
+ /** Metódo para abrir Modal de Deletar Cartas*/
   openModalDeleteCard(id: number){
     const dialogRef = this.dialog.open(ModalDeleteComponent,{
       width: '400px',

@@ -28,7 +28,7 @@ import { HomeComponent } from './home/home.component';
 import { ModalComponent } from './componentes/modal/modal.component';
 import { ModalEditComponent } from './componentes/modal-edit/modal-edit.component';
 import { ModalDeleteComponent } from './componentes/modal-delete/modal-delete.component';
-import { LoginComponent } from './login/login.component';
+
 
 
 
@@ -41,7 +41,7 @@ import { LoginComponent } from './login/login.component';
     ModalComponent,
     ModalEditComponent,
     ModalDeleteComponent,
-    LoginComponent
+
   ],
   imports: [
     BrowserModule,
