@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color:#f6f6f6 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.button-save {
+  background-color: #2e4072;
+  color: #fff;
+}
+
+.button-cancel {
+  background-color: #ff7b00de;
+  color: #fff;
+}
+
+.align-buttons {
+  padding: 40px 70px !important;
+}
+
+.mat-dialog-container-delete {
+  overflow: hidden !important;
+  padding: 10px 30px
+}
+
+.mat-dialog-container::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+}
+
+.mat-dialog-container::-webkit-scrollbar-track {
+  background: #f6f6f6
+}
+
+.mat-dialog-container::-webkit-scrollbar-thumb {
+  background-color: #2e4072;
+  border-radius: 20px;
+  border: 3px solid #ff7b00de;
+}

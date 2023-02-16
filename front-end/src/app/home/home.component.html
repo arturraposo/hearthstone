@@ -1,0 +1,77 @@
+<div class="container">
+  <mat-form-field class="filtro">
+    <mat-label>Procurar Carta</mat-label>
+    <input matInput (keyup)="applyFilter($event)" #input placeholder="Ex: ABYSSAL DEPTHS">
+  </mat-form-field>
+
+  <div class="button-add-row">
+    <button (click)="openModalInsertCard()" mat-raised-button class="button-add">Nova Carta</button>
+  </div><br>
+
+  <table mat-table [dataSource]="dataSource" matSort  class="mat-elevation-z8" >
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="nome">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Nome </th>
+      <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="desc">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Descrição </th>
+      <td mat-cell *matCellDef="let element"> {{element.descricao}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <!-- <ng-container matColumnDef="img">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Imagem</th>
+      <td mat-cell *matCellDef="let element">
+        <img [src]="element.url" style="width:30px;height: 30px">
+      </td>
+    </ng-container> -->
+
+    <ng-container matColumnDef="ataque">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Ataque</th>
+      <td mat-cell *matCellDef="let element"> {{element.ataque}} </td>
+    </ng-container>
+    <ng-container matColumnDef="defesa">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Defesa</th>
+      <td mat-cell *matCellDef="let element"> {{element.defesa}} </td>
+    </ng-container>
+    <ng-container matColumnDef="tipo">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Tipo</th>
+      <td mat-cell *matCellDef="let element"> {{element.tipo}} </td>
+    </ng-container>
+    <ng-container matColumnDef="classe">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Classe</th>
+      <td mat-cell *matCellDef="let element"> {{element.classe}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef> Ações</th>
+      <td mat-cell *matCellDef="let row">
+        <button mat-icon-button (click)="openModalEditCard(row.id)">
+          <mat-icon class="color-icon-edit">edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="openModalDeleteCard(row.id)">
+          <mat-icon class="color-icon-delete">delete</mat-icon>
+        </button>
+    </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator
+  [length]="dataSource?.data.length"
+  [pageIndex]="0"
+  [pageSize]="10"
+  [pageSizeOptions]="[10,25,50]"
+  >
+</mat-paginator>
+</div>

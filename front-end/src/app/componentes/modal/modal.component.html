@@ -1,0 +1,56 @@
+<form [formGroup]="form" >
+  <h1 mat-dialog-title class="dialog-title-align">Nova Carta</h1>
+  <mat-card>
+
+      <mat-card-content>
+        <div mat-dialog-content class="dialog-content-size">
+          <mat-form-field class="size-input">
+            <mat-label>Nome</mat-label>
+            <input matInput formControlName="nome">
+          </mat-form-field>
+          <mat-form-field class="size-input">
+            <mat-label>Descrição</mat-label>
+            <input matInput formControlName="descricao">
+          </mat-form-field>
+          <mat-form-field class="size-input">
+            <mat-label>Url da Imagem</mat-label>
+            <input matInput formControlName="url">
+          </mat-form-field>
+          <mat-form-field class="size-input">
+            <mat-label>Ataque</mat-label>
+            <input matInput type="number" min="0" max="10" formControlName="ataque">
+          </mat-form-field>
+          <mat-form-field class="size-input">
+            <mat-label>Defesa</mat-label>
+            <input matInput type="number" min="0" max="10" formControlName="defesa">
+          </mat-form-field>
+          <mat-form-field class="size-input">
+            <mat-label>Tipo</mat-label>
+            <mat-select formControlName="tipo">
+              <mat-option>Selecione</mat-option>
+              <mat-option value="Magia">Magia</mat-option>
+              <mat-option value="Criatura">Criatura</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="size-input" >
+            <mat-label>Classe</mat-label>
+            <mat-select formControlName="classe">
+              <mat-option selected>Selecione</mat-option>
+              <mat-option value="Mago">Mago</mat-option>
+              <mat-option value="Paladino">Paladino</mat-option>
+              <mat-option value="Caçador">Caçador</mat-option>
+              <mat-option value="Druida">Druida</mat-option>
+              <mat-option value="Qualquer">Qualquer</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+
+  </mat-card>
+
+  <div mat-dialog-actions class="align-buttons">
+    <button mat-button class="button-save" (click)="submitForm()">Salvar</button>
+    <button mat-button class="button-cancel" (click)="closeModal()">Cancelar</button>
+  </div>
+
+</form>

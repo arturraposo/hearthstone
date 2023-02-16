@@ -1,0 +1,24 @@
+h1.site-title, h2.site-title {
+  font-size: 34px;
+  text-transform: uppercase;
+  font-family: "Lato",sans-serif;
+  margin: 0;
+  padding: 20px 0;
+  line-height: 30px;
+  border: none;
+  margin-left: 5%;
+}
+
+.background-mat-toolbar{
+  background-color: #fff;
+}
+
+.header-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-bottom: 5px;
+  height: 150px;
+  background-image: url(https://cdn.hearthstonetopdecks.com/wp-content/uploads/2022/11/top-decks-lich-king.png);
+  background-color: #091a2d;
+}

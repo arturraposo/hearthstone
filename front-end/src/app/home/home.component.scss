@@ -1,0 +1,35 @@
+table {
+  width: 100%;
+}
+
+.container{
+  margin-top: -1%;
+  padding: 40px 70px;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.color-icon-edit{
+  color:#2e4072;
+}
+.color-icon-delete{
+  color:#ff7b00de;
+}
+
+.filtro{
+  width: 20%;
+}
+
+.button-add-row {
+  display: table-cell;
+  max-width: 600px;
+  margin: 0;
+}
+
+.button-add{
+  background-color:#2e4072;
+  color:#fff
+}

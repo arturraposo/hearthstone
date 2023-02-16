@@ -1,0 +1,74 @@
+{
+  "cartas": [
+    {
+      "nome": "ALUNETH",
+      "descricao": "Aluneth é uma carta de Arma Maga Lendária",
+      "url": "https://cdn.hearthstonetopdecks.com/wp-content/uploads/2017/11/aluneth-1-300x429.png",
+      "ataque": 0,
+      "defesa": 3,
+      "tipo": "Magia",
+      "classe": "Mago",
+      "id": 1
+    },
+    {
+      "nome": "ARCHMAGE",
+      "descricao": "Arquimago Antonidas é uma carta de Mago Lacaio",
+      "url": "https://cdn.hearthstonetopdecks.com/wp-content/uploads/2014/03/archmage-antonidas-300x429.png",
+      "ataque": 5,
+      "defesa": 7,
+      "tipo": "Criatura",
+      "classe": "Mago",
+      "id": 2
+    },
+    {
+      "nome": "ADDLED",
+      "descricao": "Addled Grizzly é uma carta Rara Druid Minion Beast com 3 custos de mana do conjunto Whispers of the Old Gods!",
+      "url": "https://cdn.hearthstonetopdecks.com/wp-content/uploads/2016/04/addled-grizzly-300x429.png",
+      "ataque": 2,
+      "defesa": 2,
+      "tipo": "Criatura",
+      "classe": "Druida",
+      "id": 3
+    },
+    {
+      "nome": "ANUB’REKHAN",
+      "descricao": " Anub'Rekhan é uma carta Druid Minion Undead com custo de Mana de 8 Mana do conjunto March of the Lich King!",
+      "url": "https://cdn.hearthstonetopdecks.com/wp-content/uploads/2022/06/AnubRekhan-300x427.png",
+      "ataque": 7,
+      "defesa": 7,
+      "tipo": "Criatura",
+      "classe": "Druida",
+      "id": 4
+    },
+    {
+      "nome": "ANACRONOS",
+      "descricao": "Anachronos é um card Lendário Paladin Minion Dragon de 7 Mana do conjunto March of the Lich King!",
+      "url": "https://cdn.hearthstonetopdecks.com/wp-content/uploads/2022/11/Anachronos-300x427.png",
+      "ataque": 8,
+      "defesa": 8,
+      "tipo": "Criatura",
+      "classe": "Paladino",
+      "id": 5
+    },
+    {
+      "nome": "ANCIENT",
+      "descricao": "Ancient Void Hound é uma carta de Demônio Caçador de Demônios Épicos ",
+      "url": "https://cdn.hearthstonetopdecks.com/wp-content/uploads/2020/07/Ancient-Void-Hound-300x408.png",
+      "ataque": 10,
+      "defesa": 10,
+      "tipo": "Criatura",
+      "classe": "Caçador",
+      "id": 6
+    },
+    {
+      "nome": "BRUTAL",
+      "descricao": "Brutal Annihilan é uma carta de Demônio Caçador de Demônios Épicos",
+      "url": "https://cdn.hearthstonetopdecks.com/wp-content/uploads/2022/11/Brutal-Annihilan-300x415.png",
+      "ataque": 9,
+      "defesa": 9,
+      "tipo": "Criatura",
+      "classe": "Caçador",
+      "id": 7
+    }
+  ]
+}
